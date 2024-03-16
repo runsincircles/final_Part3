@@ -9,14 +9,14 @@ module.exports.config = {
 		aliases: ["dal"],
 		hasPrefix: false,
 		description: "Generate images by Dalle-3 AI",
-		usage: "[text] \nJamon [A 17/18/19 years old boy/girl watching football match on tv and written Dipto and 69 on the back of his Dress , 4k]",
+		usage: "[text] \nJamon [A granny wearing a superhero cape watching American football on tv and written LMAO on the back , 4k]",
 		cooldown: 5
 };
 
 module.exports.run = async function ({ api, event, args }) {
 		const prompt = event.messageReply ? event.messageReply.body.split("dalle")[1] : args.join(" ");
 		if (!prompt) {
-				return api.sendMessage("❌| Wrong Format. Use: 17/18 years old boy/girl watching football match on tv and written Dipto and 69 on the back of his Dress , 4k", event.threadID, event.messageID);
+				return api.sendMessage("❌| Wrong Format. Use: Granny superhero wearing a cape watching American football on tv and written LMAO on the back of her  , 4k", event.threadID, event.messageID);
 		}
 
 		try {
