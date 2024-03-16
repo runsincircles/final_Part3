@@ -9,7 +9,7 @@ module.exports.config = {
 		description: "EDUCATIONAL",
 		hasPrefix: false,
 		usage: "[question]",
-		cooldown: 10
+		cooldown: 5
 };
 
 module.exports.run = async function ({ api, event, args }) {
