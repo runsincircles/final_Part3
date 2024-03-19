@@ -26,7 +26,7 @@ async function processBesCommand(event, api, userMessages, userName, replyMessag
 
   if (input.includes('-help')) {
     const usage = "Usage: Gia [message]\n\n" +
-      "Description: Engages in a conversation using colloquial Filipino language with occasional grammatical errors. Adopting the persona of a best friend, it generates responses based on the given message.\n\n" +
+      "Description: Engages in a conversation using colloquial English language with occasional grammatical errors. Adopting the persona of a sarcastic best friend, it generates responses based on the given message.\n\n" +
       "Example: How's it Goin?\n\n" +
       "Note: The command uses the OpenAI GPT-3.5-turbo model to generate responses.";
     api.sendMessage(usage, event.threadID, event.messageID);
